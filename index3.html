@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medio Juego</title>
+    <style>
+        body{
+            background-image: url(./imagenes/fondo_ajedrez1.jpg);
+        }
+        #texto{
+            background-image: url(./imagenes/fondo_texto.jpg);
+            border: 2px solid white;
+            color: white;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        #menu{
+            background-image: url(./imagenes/fondo_texto.jpg);
+            border: 2px solid white;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+        a{
+            color: white;
+        }
+        #imagenes{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .rectangular{
+            height: 150px;
+            width: 100px;
+        }
+        img{
+            margin: 10px;
+        }
+        .cuadrado{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id = menu>
+        <p><a href="./index.html">Inicio</a></p>
+        <p><a href="./index1.html">Reglas</a></p>
+        <p><a href="./index2.html">Inicio de Juego</a></p>
+        <p><a href="./index3.html">Medio Juego</a></p>
+        <p><a href="./index4.html">Final de Juego</a></p>
+    </div>
+    <div id = texto>
+        <h1>Medio Juego</h1>
+        <p>Esta es (valga la redundancia) la parte media de la partida. Sabes que estas en el medio juego cuando ambos jugadores han desarrollado todas sus piezas. En este puento lo mas importante es tratar de no perder piezas sin obtener algo a cambio, ya sean piezas del mismo valor o mas alto, o mucha actividad para tus piezas.</p>
+        <p>Hay que pensar en la forma de obtener ventaja sobre tu oponente, haciendo planes y combinaciones con tus piezas. </p>
+        <p>Otro punto importante es tratar de no perder muchos peones, porque son muy utiles en los finales.</p>
+        <div id = imagenes>
+            <img class = cuadrado src = "./imagenes/medio_juego.png"/>
+        </div>
+    </div>
+    
+</body>
+</html>

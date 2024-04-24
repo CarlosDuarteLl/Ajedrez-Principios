@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <style>
+        body{
+            background-image: url(./imagenes/fondo_ajedrez1.jpg);
+        }
+        #texto{
+            background-image: url(./imagenes/fondo_texto.jpg);
+            border: 2px solid white;
+            color: white;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        #menu{
+            background-image: url(./imagenes/fondo_texto.jpg);
+            border: 2px solid white;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+        a{
+            color: white;
+        }
+        #imagenes{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .rectangular{
+            height: 150px;
+            width: 100px;
+        }
+        img{
+            margin: 10px;
+        }
+        .cuadrado{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id = menu>
+        <p><a href="./index.html">Inicio</a></p>
+        <p><a href="./index1.html">Reglas</a></p>
+        <p><a href="./index2.html">Inicio de Juego</a></p>
+        <p><a href="./index3.html">Medio Juego</a></p>
+        <p><a href="./index4.html">Final de Juego</a></p>
+    </div>
+    <div id = texto>
+        <h1>Final</h1>
+        <p>En esta etapa quedan muy pocas piezas en el tablero.</p>
+        <p>Hay varias cosas importantes que hay que hacer en esta fase.</p>
+        <ol>
+            <li>Activar al rey: en este punto de la partida el rey se debe volver una pieza de ataque (Principalmente contra peones enemigos).</li>
+            <li>Tratar de coronar peones: debes tratar de coronar peones para obtener piezas fuertes que te ayuden a ganar.</li>
+            <li>Evitar que tu oponente corone: tu oponente tambien intentara coronar sus peones, tu debes evitarlo.</li>
+        </ol>
+        <div id = imagenes>
+            <img class = cuadrado src = "./imagenes/final.png"/>
+        </div>
+    </div>
+    
+</body>
+</html>

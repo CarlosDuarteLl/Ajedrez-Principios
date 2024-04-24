@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimientos y reglas</title>
+    <style>
+        body{
+            background-image: url(./imagenes/fondo_ajedrez1.jpg);
+        }
+        #texto{
+            background-image: url(./imagenes/fondo_texto.jpg);
+            border: 2px solid white;
+            color: white;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        #menu{
+            background-image: url(./imagenes/fondo_texto.jpg);
+            border: 2px solid white;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+        a{
+            color: white;
+        }
+        #imagenes{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .rectangular{
+            height: 150px;
+            width: 100px;
+        }
+        img{
+            margin: 10px;
+        }
+        .cuadrado{
+            height: 150px;
+            width: 150px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id = menu>
+        <p><a href="./index.html">Inicio</a></p>
+        <p><a href="./index1.html">Reglas</a></p>
+        <p><a href="./index2.html">Inicio de Juego</a></p>
+        <p><a href="./index3.html">Medio Juego</a></p>
+        <p><a href="./index4.html">Final de Juego</a></p>
+    </div>
+    <div id = texto>
+        <h1>Reglas</h1>
+    <h2>Movimiento de las Piezas</h2>
+    <p>Peon: al empezar se puede mover 1 o 2 casillas hacia delante, despues de haberse movido la primera vez solo pueden avanzar 1 casilla, no pueden retroceder. Capturan 1 casilla en diagonal. No lleva simbolo escrito, solo la casilla a la que se mueve. Valor = 1.</p>
+    <div id = imagenes>
+        <img class = rectangular src = "./imagenes/peon.png"/>
+        <img class = rectangular src = "./imagenes/peon1.png"/>
+        <img class = rectangular src = "./imagenes/peon2.png"/>
+        <img class = rectangular src = "./imagenes/peon3.png"/>
+    </div>
+    <p>Caballo: se mueve y captura formando una "L". Unico que puede saltar piezas. Su simbolo escrito es C. Valor = 3.</p>
+    <div id = imagenes>
+        <img class = rectangular src = "./imagenes/caballo.png"/>
+        <img class = rectangular src = "./imagenes/caballo1.png"/>
+    </div>
+    <p>Alfil: se mueve y captura en diagonal las casillas que sean. Su simbolo escrito es A. Valor = 3 (ligeramente mas que el caballo).</p>
+    <div id = imagenes>
+        <img class = cuadrado src = "./imagenes/alfil.png"/>
+        <img class = cuadrado src = "./imagenes/alfil1.png"/>
+    </div>
+    <p>Torre: se mueve y captura en horiontal y vertical las casillas que sean.Su simbolo escrito es T. Valor = 5.</p>
+    <div id = imagenes>
+        <img class = rectangular src = "./imagenes/torre.png"/>
+        <img class = rectangular src = "./imagenes/torre1.png"/>
+    </div>
+    <p>Dama: se mueve y captura en horizontal, vertical y diagonal las casillas que sean. Su simbolo escrito es D. Valor = 9.</p>
+    <div id = imagenes>
+        <img class = cuadrado src = "./imagenes/dama.png"/>
+        <img class = cuadrado src = "./imagenes/dama1.png"/>
+        <img class = cuadrado src = "./imagenes/dama2.png"/>
+    </div>
+    <p>Rey: se mueve y captura en horiontal, vertical y diagonal 1 casilla. Su simbolo escrito es R. Valor = infinito (la partida).</p>
+    <div id = imagenes>
+        <img class = rectangular src = "./imagenes/rey.png"/>
+        <img class = rectangular src = "./imagenes/rey1.png"/>
+        <img class = rectangular src = "./imagenes/rey2.png"/>
+    </div>
+    <h2>Partida</h2>
+    <p>Empiezan tirando las piezas blancas, se tira intercaladamente 1 jugada blancas y 1 jugada negras, 1 movimiento consta de 1 jugada blanca y 1 negra. Se acaba cuando le dan jaque mate a alguno de los dos reyes, cuando alguien se rinde, cuando ambos jugadores declaran tablas (empate), o cuando se ahoga a un rey (empate).</p>
+    <p>Jaque mate: Cuando el rey esta en jaque y no se puede quitar de este ni moviendose, ni tapandose con una pieza. Gana el jugador que da el jauqe mate al rey enemigo.</p>
+    <div id = imagenes>
+        <img class = cuadrado src = "./imagenes/mate.png"/>
+    </div>
+    <p>Rey ahogado: Cuando el rey no esta en jaque y no se puede mover a ningun lado, ni puede mover otras piezas. Esto es un empate.</p>
+    <div id = imagenes>
+        <img class = cuadrado src = "./imagenes/ahogado.png"/>
+    </div>
+    <h2>Reglas Especiales</h2>
+    <p>Coronar: cuando un peon llega a la ultima fila del lado enemigo se puede convertir en la pieza que gustes (excepto rey o peon), independientemente si la pieza que quieres fue capturada o no.</p>
+    <div id = imagenes>
+        <img class = cuadrado src = "./imagenes/coronar.png"/>
+        <img class = cuadrado src = "./imagenes/coronar1.png"/>
+    </div>
+    <p>Enroque: cuando el rey no se ha movido, la torre del lado del enroque no se ha movido, no hay piezas entre el rey y la torre, y no hay ninguna pieza enemiga apuntando a alguna casilla entre estos dos; entonces puedes mover al rey dos casillas hacia la torre y poner la torre a lado del rey del lado opuesto a su casilla inicial. Sucede del lado del rey.</p>
+    <p>Enroque largo: lo mismo que el enroque, pero es del lado de la dama.</p>
+    <div id = imagenes_peon>
+        <img class = cuadrado src = "./imagenes/Enroque.png"/>
+        <img class = cuadrado src = "./imagenes/Enroque1.png"/>
+    </div>
+    <p>Capturar al paso (en passant): si un peón avanza dos casillas en su primer movimiento, y al hacerlo se sitúa al lado de un peón rival, este peón enemigo tiene la opción de capturar al primero ocupando la casilla que aquel hubiera ocupado si solo hubiera avanzado una casilla. Si pasa una jugada despues de que se avanzó el peon dos casillas, entones ya no se puede tomar al paso.</p>
+    <div id = imagenes_peon>
+        <img class = rectangular src = "./imagenes/peon.png"/>
+        <img class = rectangular src = "./imagenes/peon2.png"/>
+        <img class = rectangular src = "./imagenes/al_paso.png"/>
+    </div>
+    
+    
+
+    </div>
+    
+</body>
+</html>

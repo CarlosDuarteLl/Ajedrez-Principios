@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de la Partida</title>
+    <style>
+        body{
+            background-image: url(./imagenes/fondo_ajedrez1.jpg);
+        }
+        #texto{
+            background-image: url(./imagenes/fondo_texto.jpg);
+            border: 2px solid white;
+            color: white;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        #menu{
+            background-image: url(./imagenes/fondo_texto.jpg);
+            border: 2px solid white;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+        a{
+            color: white;
+        }
+        #imagenes{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .rectangular{
+            height: 150px;
+            width: 100px;
+        }
+        img{
+            margin: 10px;
+        }
+        .cuadrado{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id = menu>
+        <p><a href="./index.html">Inicio</a></p>
+        <p><a href="./index1.html">Reglas</a></p>
+        <p><a href="./index2.html">Inicio de Juego</a></p>
+        <p><a href="./index3.html">Medio Juego</a></p>
+        <p><a href="./index4.html">Final de Juego</a></p>
+    </div>
+    <div id = texto>
+        <h1>Inicio de Partida</h1>
+        <p>En el inicio del juego hay varias cosas importantes:</p>
+        <ol>
+            <li>Ganar el centro para tener mas espacio para desarrollar tus piezas</li>
+            <li>Desarrollar tus piezas para que esten activas en el tablero</li>
+            <li>Seguridad del rey para que no te den jaque mate</li>
+        </ol>
+        <p>Para lograr estos puntos tan importantes se han estudiado cuales son las mejores jugadas iniciales para el inicio de la partida. Son llamadas aperturas.</p>
+        <h2>Aperturas</h2>
+        <p>Hay una gran cantidad de aperturas con una gran cantidad de variantes, pero aqui te digo cuales son las mas faciles de entender.</p>
+        <ol>
+            <li>Apertura italiana (blancas): esta comienza con 1.e4, e5 2.Cf3, Cc6 3.Ac4. Su objetivo es obtener el centro de una forma rapida con el peon y el caballo, luego poner el alfil en una buena casilla y preparar el enroque.</li>
+            <div id = imagenes>
+                <img class = cuadrado src = "./imagenes/italiana.png"/>
+            </div>
+            <li>Defensa Siciliana (negras): 1.e4, c5. Normalmente se juega 2.Cf3, d6. Esta apertura usualmente la juegan jugadores agresivos. El punto del negro es cambiar un peon de alfil por un peon central.</li>
+            <div id = imagenes>
+                <img class = cuadrado src = "./imagenes/siciliana.png"/>
+            </div>
+            <li>Defensa Eslava (negras): 1.d4, d5 2.c4 c6. Es una defensa solida pero que no te quita opciones de ataque. Es una variente fuerte contra el gambito de dama. Se debe desarrollar el alfil de casillas blancas (Ac8).</li>
+            <div id = imagenes>
+                <img class = cuadrado src = "./imagenes/eslava.png"/>
+            </div>
+        </ol>
+    </div>
+    
+    
+</body>
+</html>
